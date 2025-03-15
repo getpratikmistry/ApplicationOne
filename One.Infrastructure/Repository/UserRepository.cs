@@ -5,7 +5,7 @@ using One.Infrastructure.Data;
 
 namespace One.Infrastructure.Repository
 {
-    class UserRepository : Repository<UserDetail>, IUserRepository
+    public class UserRepository : Repository<UserDetail>, IUserRepository
     {
         private readonly OneDBContext _context;
 

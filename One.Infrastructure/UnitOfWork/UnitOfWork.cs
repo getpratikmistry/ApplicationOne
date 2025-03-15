@@ -1,10 +1,7 @@
-﻿using One.Domain.Interfaces.UnitOfWork;
-using One.Domain.Entities;
-using One.Domain.Interfaces;
+﻿using One.Domain.Interfaces;
 using One.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
 
-namespace One.Infrastructure.UnitOfWork
+namespace One.Infrastructure.Repository
 {
     public class UnitOfWork(OneDBContext context, IUserRepository _userRepository) : IUnitOfWork
     {
